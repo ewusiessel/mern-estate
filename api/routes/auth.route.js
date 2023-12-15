@@ -1,3 +1,5 @@
+// Desc: Router for auth
+
 import express from "express";
 import { signup } from "../controllers/auth.controller.js";
 

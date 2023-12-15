@@ -1,3 +1,5 @@
+// Desc: User model for MongoDB
+
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
