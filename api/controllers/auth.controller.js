@@ -24,7 +24,7 @@ export const signin = async (req, res, next) => {
   try {
     const validUser = await User.findOne({ email }); // check if user exists
     if (!validUser) {
-      return next(errorHandler(404, "User not found")); // if user does not exist
+      return next(errorHandler(404, "User not found!")); // if user does not exist
     }
 
     const validPassword = bycrypt.compareSync(password, validUser.password);
